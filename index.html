@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/music-tune.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory game</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo-container">
+            </div>
+            <button class="restart">Try again!</button>
+            <div class="records-link">
+                <p class="records-text">Records</p>
+            </div>
+            <div class="step-container">
+                <div class="audio-player">
+                    <audio src="assets/audio/accordion.mp3"></audio>
+                    <div class="volume-button"></div>
+                </div>
+                <p class="step-text">Step </p>
+                <p class="step-count"></p>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container main-container">
+            <section class="game-content">
+                <div class="card" data-instrument="accordion">
+                    <img src="assets/img/accordion.png" alt="instrument" class="front-img">
+                    <img src="assets/img/note-key.png" alt="instrument" class="back-img">
+                </div>
+                <div class="card" data-instrument="accordion">
+                    <img src="assets/img/accordion.png" alt="instrument" class="front-img">
+                    <img src="assets/img/note-key.png" alt="instrument" class="back-img">
+                </div>
+                <div class="card" data-instrument="balalai">
+                    <img src="assets/img/balalai.png" alt="instrument" class="front-img">
+                    <img src="assets/img/note-key.png" alt="instrument" class="back-img">
+                </div>
+                <div class="card" data-instrument="balalai">
+                    <img src="assets/img/balalai.png" alt="instrument" class="front-img">
+                    <img src="assets/img/note-key.png" alt="instrument" class="back-img">
+                </div>
+                <div class="card" data-instrument="drums">
+                    <img src="assets/img/drums.png" alt="instrument" class="front-img">
+                    <img src="assets/img/note-key.png" alt="instrument" class="back-img">
+                </div>
+                <div class="card" data-instrument="drums">
+                    <img src="assets/img/drums.png" alt="instrument" class="front-img">
+                    <img src="assets/img/note-key.png" alt="instrument" class="back-img">
+                </div>
+                <div class="card" data-instrument="guitar">
+                    <img src="assets/img/guitar.png" alt="instrument" class="front-img">
+                    <img src="assets/img/note-key.png" alt="instrument" class="back-img">
+                </div>
+                <div class="card" data-instrument="guitar">
+                    <img src="assets/img/guitar.png" alt="instrument" class="front-img">
+                    <img src="assets/img/note-key.png" alt="instrument" class="back-img">
+                </div>
+                <div class="card" data-instrument="harp">
+                    <img src="assets/img/harp.png" alt="instrument" class="front-img">
+                    <img src="assets/img/note-key.png" alt="instrument" class="back-img">
+                </div>
+                <div class="card" data-instrument="harp">
+                    <img src="assets/img/harp.png" alt="instrument" class="front-img">
+                    <img src="assets/img/note-key.png" alt="instrument" class="back-img">
+                </div>
+                <div class="card" data-instrument="piano">
+                    <img src="assets/img/piano.png" alt="instrument" class="front-img">
+                    <img src="assets/img/note-key.png" alt="instrument" class="back-img">
+                </div>
+                <div class="card" data-instrument="piano">
+                    <img src="assets/img/piano.png" alt="instrument" class="front-img">
+                    <img src="assets/img/note-key.png" alt="instrument" class="back-img">
+                </div>
+                <div class="card" data-instrument="saxophone">
+                    <img src="assets/img/saxophone.png" alt="instrument" class="front-img">
+                    <img src="assets/img/note-key.png" alt="instrument" class="back-img">
+                </div>
+                <div class="card" data-instrument="saxophone">
+                    <img src="assets/img/saxophone.png" alt="instrument" class="front-img">
+                    <img src="assets/img/note-key.png" alt="instrument" class="back-img">
+                </div>
+                <div class="card" data-instrument="truba">
+                    <img src="assets/img/truba.png" alt="instrument" class="front-img">
+                    <img src="assets/img/note-key.png" alt="instrument" class="back-img">
+                </div>
+                <div class="card" data-instrument="truba">
+                    <img src="assets/img/truba.png" alt="instrument" class="front-img">
+                    <img src="assets/img/note-key.png" alt="instrument" class="back-img">
+                </div>
+                <div class="card" data-instrument="viola">
+                    <img src="assets/img/viola.png" alt="instrument" class="front-img">
+                    <img src="assets/img/note-key.png" alt="instrument" class="back-img">
+                </div>
+                <div class="card" data-instrument="viola">
+                    <img src="assets/img/viola.png" alt="instrument" class="front-img">
+                    <img src="assets/img/note-key.png" alt="instrument" class="back-img">
+                </div>
+                <div class="card" data-instrument="violin">
+                    <img src="assets/img/violin.png" alt="instrument" class="front-img">
+                    <img src="assets/img/note-key.png" alt="instrument" class="back-img">
+                </div>
+                <div class="card" data-instrument="violin">
+                    <img src="assets/img/violin.png" alt="instrument" class="front-img">
+                    <img src="assets/img/note-key.png" alt="instrument" class="back-img">
+                </div>
+                <div class="congratulations">
+                    <p>Congratulations!!!</p>
+                    <p>You have won</p>
+                    <p>in <span class="step-count"></span> steps!</p>
+                </div>
+                <div class="records-container">
+                    <p class="records-title">Last 10 results:</p>
+                    <div class="results-item-container">
+                        <ol class="results">
+                            <li class="result-item">     ---     .</li>
+                            <li class="result-item">     ---     .</li>
+                            <li class="result-item">     ---     .</li>
+                            <li class="result-item">     ---     .</li>
+                            <li class="result-item">     ---     .</li>
+                            <li class="result-item">     ---     .</li>
+                            <li class="result-item">     ---     .</li>
+                            <li class="result-item">     ---     .</li>
+                            <li class="result-item">     ---     .</li>
+                            <li class="result-item">     ---     .</li>
+                        </ol>
+                        <p class="best">The best of <br /> all attempts:<br /> <span class="best-result"></span> steps!</p>
+                    </div>
+                    <button class="clear-history">Clear history</button>
+                </div>
+            </section> 
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="gh-container">
+                <span>&copy;</span>
+                <span class="year">2022</span>
+                <a href="https://github.com/Ilya2502" class="gh-link">Ilya2502</a>
+            </div>
+            <div class="RSS">
+                <a href="https://rs.school/js-stage0/" class="rss-link">
+                    <img src="assets/img/rs_school_js.png" alt="rss-logo" class="rss-logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
